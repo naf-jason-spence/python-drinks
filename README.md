@@ -1,0 +1,2 @@
+# Things to Remember
+To be able to run this project, you need to "**change directory**" --> "**`cd`**" into your project directory. Your project directory is the directory that contains the "**`manage.py`**" file.

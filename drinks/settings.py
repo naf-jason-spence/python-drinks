@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_2ivi2e(g!5x29qb0*(vs1azm51$j^uehz%)oxc9(-*j+zrekz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'onrender.com']
 
@@ -81,12 +81,15 @@ WSGI_APPLICATION = 'drinks.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+#
+# Old sqlite configuration
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     'default': dj_database_url.config(
         default='postgresql://django_test_7zf6_user:kjOwgZ2cPu6WRGaQrRHCAMpALgGp8O5h@dpg-cq41p43v2p9s73egio1g-a.oregon-postgres.render.com/django_test_7zf6',
